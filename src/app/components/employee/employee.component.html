@@ -1,0 +1,35 @@
+
+
+<div class="container">
+    <button class="mt-5 mx-2"   (click)="openDialog()">Add New</button>
+    <div class="table ">
+        <table class="table" >
+            <thead >
+                <th scope="col">Code</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Action</th>
+            </thead>
+            <tbody *ngFor="let item of empdata">
+                <tr>
+                    <td>{{item.code}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.phone}}</td>
+                    <td>{{item.destination}}</td>
+                    <td><a class="btn btn-primary" (click)="EditFunction()">Edit</a>|<a class="btn btn-danger" (click)="DeleteFunction(item.code)">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+   
+
+
+
+      
+
+</div>
+

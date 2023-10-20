@@ -1,0 +1,47 @@
+<div class="container  mt-5" >
+    <div class="modal-header text-center ">
+        <h4 class="modal-title text-center" data-dismiss="modal" >Employee-Form</h4> 
+        <!-- <button type="button" class="btn-close" aria-label="close"></button> -->
+    </div>
+    <div class="modal-body">
+        <form   #empForm="ngForm" (submit)="saveemployee(empForm.value)">
+            <div class="mb-3">
+                <label for="">Code</label>
+                <div class="input-group">
+                    <input name="code"  class="form-control" #code="ngModel" ngModel>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="">name</label>
+                <div class="input-group">
+                    <input name="name" minlength="5" class="form-control" required="" #name="ngModel" ngModel>
+                    
+                </div>
+                <span *ngIf="name.invalid"  class="nameerror">Enter valid name</span>
+            </div>
+            <div class="mb-3">
+                <label for="">Email</label>
+                <div class="input-group">
+                    <input name="email" class="form-control" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #email="ngModel" ngModel>
+                </div>
+                <span *ngIf="email.invalid && email.touched"  class="nameerror">Enter valid email</span>
+            </div>
+            <div class="mb-3">
+                <label for="">phone</label>
+                <div class="input-group">
+                    <input name="phone" class="form-control" required pattern="^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" #phone="ngModel" ngModel>
+                </div>
+
+                <label for="">Destination</label>
+                <input name="name" minlength="5" class="form-control" required="" #destination="ngModel" ngModel>
+               
+                  <button type="submit" [disabled]="empForm.invalid" class="btn btn-secondary m-3">Save Changes</button>
+            </div>
+           
+        </form>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary m-3" (click)="btnClose()" aria-hidden="false" >Cancel</button>
+   
+    </div>
+</div>

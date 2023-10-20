@@ -1,0 +1,11 @@
+
+body{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    background-color: aqua;
+}
+.nameerror{
+    color: red;
+}

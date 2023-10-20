@@ -1,0 +1,82 @@
+{
+  "employees": [
+    {
+      "code": "202201",
+      "name": "Smith",
+      "email": "smith@gmail.com",
+      "phone": "2345678965",
+      "destination": "developer",
+      "id": 1
+    },
+    {
+      "code": "202202",
+      "name": "Walsh",
+      "email": "walsh@gmail.com",
+      "phone": "5463378898",
+      "destination": "developer",
+      "id": 2
+    },
+    {
+      "code": "202203",
+      "name": "Robert",
+      "email": "robert@gmail.com",
+      "phone": "5674845983",
+      "destination": "developer",
+      "id": 3
+    },
+    {
+      "code": "202204",
+      "name": "Alex",
+      "email": "alex@gmail.com",
+      "phone": "6659432834",
+      "destination": "developer",
+      "id": 4
+    },
+    {
+      "code": "202205",
+      "name": "Samual",
+      "email": "samual@gmail.com",
+      "phone": "4658743594",
+      "destination": "developer",
+      "id": 5
+    },
+    {
+      "code": "202206",
+      "name": "Jenifer",
+      "email": "jenifer@gmail.com",
+      "phone": "6734658792",
+      "destination": "developer",
+      "id": 6
+    },
+    {
+      "code": "202207",
+      "name": "Aleena",
+      "email": "aleena@gmail.com",
+      "phone": "6755789498",
+      "id": 7
+    },
+    {
+      "code": "",
+      "name": "arunee",
+      "email": "nasla@gmail.com",
+      "phone": "8998876532",
+      "destination": "developer",
+      "id": 8
+    },
+    {
+      "code": "",
+      "name": "nasla",
+      "email": "nasla@gmail.com",
+      "phone": "8998876532",
+      "destination": "admin",
+      "id": 9
+    },
+    {
+      "code": "123456",
+      "name": "fdeere",
+      "email": "admin@gmail.com",
+      "phone": "1234567892",
+      "id": 12
+    }
+  ]
+}
